@@ -1,0 +1,256 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+     @font-face {
+    font-family: 'VolvoBroad Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('VolvoBroad Regular'), url('VolvoBroad.woff') format('woff');
+    }
+
+    body {
+      background: linear-gradient(to right, #ece3c4, #e7e7e7, #ece3c4);
+      padding: 5px 20px 30px 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      height: 70px;
+      width: 160px;
+    }
+
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      font-size: 14px;
+      color: #666;
+      height: 50px;
+      padding: 15px;
+      border-radius: 3rem;
+      background-color: rgb(255, 255, 255,0.5);
+      cursor: pointer;
+      margin-left: 3rem;
+    }
+
+    .nav-links li:hover{
+      color: black;
+    }
+
+    .settings-icons {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    #setting {
+      border-radius: 3rem;
+      width: 100px;
+      justify-content: space-evenly;
+      display: flex;
+      align-items: center;
+      background-color: rgb(255, 255, 255,0.5);
+      height: 45px;
+      cursor: pointer;
+    }
+
+    #setting:hover {
+      background-color: black;
+      color: white;
+    }
+
+    #bell {
+      justify-content: space-around;
+      display: flex;
+      align-items: center;
+      background-color: rgb(255, 255, 255,0.5);
+      height: 45px;
+      cursor: pointer;
+      width: 45px;
+      border-radius: 50%;
+    }
+
+    #bell:hover {
+      background-color: black;
+      color: white;
+    }
+
+    #avatar {
+      justify-content: space-around;
+      display: flex;
+      align-items: center;
+      background-color: rgb(255, 255, 255,0.5);
+      height: 45px;
+      cursor: pointer;
+      width: 45px;
+      border-radius: 50%;
+    }
+
+    #avatar:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .header {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      font-weight: 300;
+      position: relative;
+      right: 600px;
+    }
+
+    .tabs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      position: relative;
+      right: 35px;
+      background-color: rgb(255, 255, 255,0.5);
+      padding: 3px 10px 3px 5px;
+      border-radius: 20px;
+    }
+
+
+    .tab.active {
+      background-color: black;
+      color: white;
+      padding: 13px;
+      border-radius: 20px;
+    }
+
+    .plans {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    
+    .plan {
+      border-radius: 20px;
+      padding: 40px 30px 30px 40px;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0,0.3);
+      position: relative;
+      border-top-right-radius: 50px;
+    }
+
+    .plan ul{
+      align-self: self-start;
+      margin-top: 3rem;
+      line-height: 1.5rem;
+    }
+
+
+    .plan.pro {
+      background-color: #1e1e1e;
+      color: white;
+      border: 3px solid #fdcd32;
+    }
+
+    .plan.popular{
+      background-color: rgb(255, 255, 255,0.3);
+    }
+
+    .plan h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .plan .price {
+      font-size:35px;
+      font-weight: 300;
+      margin: 10px 0;
+       width:190px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #check-mark {
+      margin-right: 5px;
+    }
+
+    .plan .desc {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .extras{
+      font-size: 10px;
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      height: 25px;
+      width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0.1px solid black;
+      border-radius: 20px;
+    }
+
+
+    .plan ul {
+      list-style: none;
+      margin-bottom: auto;
+    }
+
+    .plan ul li {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .plan ul li::before {
+      color: green;
+      margin-right: 10px;
+    }
+
+    .plan ul li.disabled::before {
+      content: '✖';
+      color: gray;
+    }
+
+    .plan ul li.disabled {
+      color: gray;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px;
+      border: none;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn:hover{
+      background-color: black;
+      color: white;
+    }
+    
